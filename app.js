@@ -26,7 +26,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-app.use(function (req, res) {
+/*app.use(function (req, res) {
+  fs.readFile('./public/html/HTMLPage.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    res.end();
+  });
+});*/
+app.use(function(req, res) {
   fs.readFile('public/html/HTMLPage.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
