@@ -21,7 +21,7 @@ iframe {
 	padding-left: 0px;
 }
 
-.tab button {
+.tablinks{
 	background-color: inherit;
 	float: left;
 	border: none;
@@ -32,12 +32,12 @@ iframe {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tablinks:hover {
 	background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tablinks.active {
 	background-color: #ccc;
 }
 
@@ -47,4 +47,15 @@ iframe {
 	padding: 6px 12px;
 	border: 1px solid #ccc;
 	border-top: none;
+}
+
+.application {
+	background-color: #00ffff;
+	float: right;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	margin-right: 15px;
 }

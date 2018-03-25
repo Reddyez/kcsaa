@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	h1 Quecéça
+	h2 Question d’être critique - évaluateur et comparateur d’articles
+  
+	div(class="tab")
+		button(class="tablinks" onclick="openCity(event, 'Article1')" id="defaultOpen") Article1
+		button(class="tablinks" onclick="openCity(event, 'Article2')") Article2
+		button(class="tablinks" onclick="openCity(event, 'Article3')") Article3
+		button(class="tablinks" onclick="openCity(event, 'Article4')") Article4
+		button(class="tablinks" onclick="openCity(event, 'Article5')") Article5
+		button(class="application") Quecéça
+	div(id="ArticleList")
+		div(id="Article1" class="tabcontent")
+			iframe(src="http://ici.radio-canada.ca/nouvelle/1089956/russie-election-presidentielle-vladimir-poutine")
+		div(id="Article2" class="tabcontent")
+			iframe(src="http://ici.radio-canada.ca/nouvelle/1089856/xi-jinping-reelu-unanimite-chine-president")
+		div(id="Article3" class="tabcontent")
+			iframe(src="http://ici.radio-canada.ca/nouvelle/1090978/donald-trump-conseiller-securite-nationale-remplacement-hr-mcmaster-john-bolton")
+		div(id="Article4" class="tabcontent")
+			iframe(src="http://ici.radio-canada.ca/nouvelle/1091162/catalogne-prison-independantistes-catalans-manifestations-barcelone")
+		div(id="Article5" class="tabcontent")
+			iframe(src="http://ici.radio-canada.ca/nouvelle/1090381/scandales-donnees-facebook-cambridge-analytica-vises-3-enquetes-internationales")
+		
+	script document.getElementById("defaultOpen").click();
